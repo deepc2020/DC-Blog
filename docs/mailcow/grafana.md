@@ -42,6 +42,6 @@ Um den Docker Daemon anzuweisen die Logs um zusätzliche Tags zu erweitern, muss
 ## Loki Beispiele
 
 ### RSPAMD
-`pattern "<_> <_> <_> <_> <_> <_> <_> <_> <_> <_> <_> <IP>,<_> from: <from>,"`
+`{container_name="mailcowdockerized_rspamd-mailcow_1"} |~  "rspamd_task_write_log" | pattern "<_> <_> <_> <_> <_> <_> <_> <_> <_> <_> <_> <IP>,<_> from: <from>, <_> F ( <action> )"`
 
 # Performance Monitoring mit Prometheus
