@@ -39,5 +39,9 @@ Um den Docker Daemon anzuweisen die Logs um zusätzliche Tags zu erweitern, muss
 | "log-driver": "json-file"  | Referenziert auf den JSON File Log Driver (default)  |
 | "log-opts": {"tag": "{{.ImageName}}\|{{.Name}}\|{{.ImageFullID}}\|{{.FullID}}"  | Ergänzt den Eintrag um die Tags `Image Name` = Name des Docker Images, `Name`= Container Name, etc.   |
 
+## Loki Beispiele
+
+### RSPAMD
+`pattern "<_> <_> <_> <_> <_> <_> <_> <_> <_> <_> <_> <IP>,<_> from: <from>,"`
 
 # Performance Monitoring mit Prometheus
