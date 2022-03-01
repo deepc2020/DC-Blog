@@ -24,7 +24,7 @@ Um die Logs in Grafan sauber verarbeiten zu können, sollte (optional) der JSON 
 ## Docker Daemon JSON Log Driver Anpassung
 >Alle hier aufgeführten Anpassungen stammen aus diesem [Beitrag](https://gist.github.com/ruanbekker/c6fa9bc6882e6f324b4319c5e3622460?permalink_comment_id=3621878#gistcomment-3621878) von [tuxuser](https://gist.github.com/tuxuser). Herzlichen Dank an Tuxuser!
 
-Um den Docker Daemon anzuweisen die Logs um zusätzliche Tags zu erweitern, muss die Datei `/etc/docker/daemon.json` wie folgt gepatched werden.
+Um den Docker Daemon anzuweisen die Logs um zusätzliche Tags zu erweitern, muss die Datei [`/etc/docker/daemon.json`](https://github.com/deepc2020/DC-Blog/blob/main/monitoring/docker/PatchDaemon) wie folgt gepatched werden.
 ```
 --- /etc/docker/daemon.json     2022-02-20 15:57:17.156432214 +0100
 +++ daemon.json.org     2022-02-21 09:16:23.161162897 +0100
