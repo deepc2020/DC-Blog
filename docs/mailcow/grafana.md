@@ -34,6 +34,7 @@ Um den Docker Daemon anzuweisen die Logs um zusätzliche Tags zu erweitern, muss
 ```
 
 **Zur Erklärung:**
+
 | Eintrag  | Auswirkung |
 | ------------- | ------------- |
 | "log-driver": "json-file"  | Referenziert auf den JSON File Log Driver (default)  |
